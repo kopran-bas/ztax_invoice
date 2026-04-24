@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
 specVersion: "4.0"
 metadata:
   name: ztaxinvoice
@@ -15,10 +17,10 @@ builder:
           destination: BAS_CONNECT_NEW
           url: https://my430786.s4hana.cloud.sap
           scp: true
-          authenticationType: reentranceTicket
+          authenticationType: reentranceTicket # SAML support for vscode
         app:
           name: ZTAX_INVOICE
           package: ZSD_TAX_INVOICE
-          transport: D0OK900959
+          transport: D0OK901093
         exclude:
           - /test/
